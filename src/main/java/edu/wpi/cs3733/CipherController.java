@@ -41,15 +41,13 @@ public class CipherController {
 	 * never explicitly called here.
 	 */
 	@FXML
-	public void onTextUpdate(){
-		cleartext.setText(textInputBox.getText());
-	}
+	public void onTextUpdate() {	cleartext.setText(textInputBox.getText()); }
 
 	/**
 	 * Runs when the user clicks the 'Encode!' button
 	 */
 	@FXML
-	public void updateOutput(){
+	public void updateOutput() {
 		caesarTextOut.setText(caesarCipher.getText());
 		elbonianTextOut.setText(elbonianCipher.getText());
 	}

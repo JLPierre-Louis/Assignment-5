@@ -33,6 +33,7 @@ public class CaesarCipher implements Observer {
 
 	@Override
 	public void notify(Object object) {
-		setText(object.toString());
+		if(object.toString().length() > 140) setText(object.toString().substring(0, 140));
+		else setText(object.toString());
 	}
 }
